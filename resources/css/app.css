@@ -1,0 +1,44 @@
+list {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+concessionaire,
+vehicle,
+customer,
+employee {
+    font-size: 15px;
+    padding: 0.5rem 1.5rem 0.5rem;
+    min-height: 50px;
+    width: auto;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+concessionaire[selected="true"],
+vehicle[selected="true"],
+customer[selected="true"],
+employee[selected="true"] {
+    background-color: lightgrey;
+}
+
+concessionaire[deleted="true"],
+vehicle[deleted="true"],
+customer[deleted="true"],
+employee[deleted="true"] {
+    background-color: white;
+}
+
+#messagesDiv {
+    margin-bottom: 20px;
+}
+
+.page-number {
+    font-weight: bold;
+    padding: 5px;
+}
+
+select {
+    -webkit-appearance: menulist-button !important;
+}
